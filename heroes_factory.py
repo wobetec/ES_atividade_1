@@ -7,7 +7,10 @@ from heroes import (
     ElfoLadino,
     OrcGuerreiro,
     OrcMago,
-    OrcLadino
+    OrcLadino,
+    AnaoGuerreiro,
+    AnaoMago,
+    AnaoLadino
 )
 
 
@@ -39,6 +42,15 @@ class HeroFactory:
                 class_ = OrcMago
             elif classe == "Ladino":
                 class_ = OrcLadino
+            else:
+                raise NotImplementedError(f"CLasse {classe} não implementada")
+        elif raca == "Anao":
+            if classe == "Guerreiro":
+                class_ = AnaoGuerreiro
+            elif classe == "Mago":
+                class_ = AnaoMago
+            elif classe == "Ladino":
+                class_ = AnaoLadino
             else:
                 raise NotImplementedError(f"CLasse {classe} não implementada")
         else:

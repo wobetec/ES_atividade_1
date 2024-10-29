@@ -11,3 +11,8 @@
     python main.py <raça> <classe> <nome>
 
 4. Para facilitar esse processo utilizamos o design pattern Factory Method no arquivo `heroes_factory.py`. Então para criar uma nova Raça por exemplo, basta criar uma nova classe concreta e adicionar no método `create_hero` da classe `HeroesFactory`.
+
+
+## Ps.
+
+O processo de criar nova classe/raça não é tão simples quanto parece, pois é necessário criar uma nova classe concreta e adicionar no método `create_hero` da classe `HeroesFactory`. Contudo, o design pattern Factory Method facilita esse processo e torna o código mais organizado e escalável.
